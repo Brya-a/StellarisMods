@@ -1,0 +1,32 @@
+planetary_generator_civic = {
+	potential = {
+		ethics = {
+			OR = {
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_hive_mind
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	random_weight = {
+		base = @civic_default_random_weight
+	}
+	ai_weight = {base = @civic_default_random_weight}
+
+	modifier = {
+		planet_technician_energy_produces_mult = 1.15
+		planet_technician_energy_produces_add = 1
+	}
+}
