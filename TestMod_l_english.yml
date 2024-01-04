@@ -1,0 +1,4 @@
+l_english:
+ TestMod:0 "Planetary Generator"
+ TestMod_desc:0 "Massive energy Generation"
+ TestMod_effects:0 "Technicians produce 1 extra energy and increased output +115%"
